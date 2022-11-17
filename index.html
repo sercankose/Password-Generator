@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>
+          Generate a <br class="br-tag" />
+          random password
+        </h1>
+        <p>Never use an insecure password again.</p>
+      </div>
+      <div class="input-area">
+        <input
+          class="pw-length-input"
+          type="number"
+          id="input-el"
+          placeholder="Password Length"
+        />
+        <button id="input-btn">SAVE INPUT</button>
+      </div>
+
+      <button
+        class="generate-pw"
+        onclick="passwordGeneratorOnClickEventHandler()"
+      >
+        Generate Passwords
+      </button>
+      <div class="password-area">
+        <button id="show1-el" onclick="copyToClipboard('show1-el')"></button>
+        <button id="show2-el" onclick="copyToClipboard('show2-el')"></button>
+        <button id="show3-el" onclick="copyToClipboard('show3-el')"></button>
+        <button id="show4-el" onclick="copyToClipboard('show4-el')"></button>
+      </div>
+      <p
+        class="copy-pw"
+        id="copyToClipboard"
+        onclick="copyToClipboard('copyToClipboard')"
+      ></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
